@@ -1,20 +1,14 @@
 import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-core"
 import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core'
 import { ApolloServer } from 'apollo-server-express'
-
+import expressFileUpload from "express-fileupload"
 import { schema } from "./modules/index.js"
-
 import model from "./utils/model.js"
-
+import config from "./config.js"
 import express from 'express'
-
 import http from 'http'
-
 import path from "path"
 
-import config from "./config.js"
-
-import expressFileUpload from "express-fileupload"
 
 
 async function startApolloServer() {
@@ -47,4 +41,3 @@ async function startApolloServer() {
 
 
 startApolloServer()
-

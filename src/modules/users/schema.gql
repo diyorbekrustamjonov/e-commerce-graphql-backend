@@ -1,5 +1,5 @@
 type Query{
-	users(userId: String): [User!]!
+	users(userId: String, token: String!): [User!]!
 }
 
 type User{
@@ -8,4 +8,25 @@ type User{
 	password: String!
 	contact: String!
 	email: String!
+}
+
+
+type Mutation{
+	createUser(
+		username: String!
+		password: String!
+		contact: String!
+		email: String!
+	): Response!
+
+	loginUser(
+		username: String!
+		password: String!
+	): Response!
+}
+
+type Response{
+	status: String!
+	message: String!
+	token: String!
 }

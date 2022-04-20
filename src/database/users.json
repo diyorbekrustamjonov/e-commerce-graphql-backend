@@ -1,9 +1,10 @@
 [
-	{
-		"user_id": 1,
-		"username": "Diyorbek1",
-		"password": "38c789ff1464e2c7ea8f0f318a9a05ada7bf634ccc2cba227564f56fafb9fc28",
-		"contact": "998992312433",
-		"email": "drustamjonov0919@gmail.com"
-	}
+    {
+        "user_id": 1,
+        "username": "Diyorbek1",
+        "password": "38c789ff1464e2c7ea8f0f318a9a05ada7bf634ccc2cba227564f56fafb9fc28",
+        "email": "drustamjonov0919@gmail.com",
+        "contact": "998992312433",
+        "role": "user"
+    }
 ]
